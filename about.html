@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body class="about">
+    <nav>
+        <ul class="sidebar">
+           <li onclick=hideSidebar()><a class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="35px" viewBox="0 -960 960 960" width="35px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="#connect">Connect</a></li>
+           <li><a href="input.html"><button class="btn">Build Resume</button></a></li>
+        </ul>
+        <ul>
+           <li class="logo" style="font-size: xx-large; font-family: cursive; text-transform: uppercase; font-weight: bolder; text-shadow: 1px 1px 0px black;">Nihal Khan Ghouri</li>
+           <li class="hideOnMobile"><a href="index.html">Home</a></li>
+           <li class="hideOnMobile"><a href="about.html">About</a></li>
+           <li class="hideOnMobile"><a href="#connect">Connect</a></li>
+           <li class="hideOnMobile"><a href="input.html"><button class="btn">Build Resume </button></a></li>
+           <li onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+       </nav>
+
+     <div class="content" style="height: 58vh; align-content: center;">
+        <h1 class="heading">About This Resume Builder🔥</h1>
+        <p class="p1">Welcome to our intuitive Resume Builder, designed to assist you in crafting professional resumes in just minutes. Whether you’re a student, a recent graduate, or an experienced worker, this tool offers customizable templates that emphasize your skills and accomplishments in the best way possible. Simply input your information, and watch your resume come together instantly!
+
+Our mission is to make the resume-building process simple and accessible for everyone. With clean layouts, user-friendly fields, and step-by-step assistance, you’ll have a polished resume ready to impress potential employers.
+.</p>  
+            <a href="input.html"><button class="main">Create My Resume</button></a>
+     </div>
+
+     <div id="connect" class="Social-logo">
+    <a href="https://www.youtube.com/@nihal_khan_321" target="_blank"></a>
+    <a href="https://linkedin.com/in/nihalkhanghouri" target="_blank"></a>
+    <a href="https://github.com/nihalkhann" target="_blank"></a>
+    <a href="https://www.instagram.com/nihal.khan_ghouri/" target="_blank"></a>
+</div>
+
+     
+     <div class="footer">
+    
+    <h2>Connect on Social Media❤️</h2>
+    <div id="Connect" class="Social-logo">
+        <a href="https://www.youtube.com/@nihal_khan_321"target="_blank"><img class="social" src="yt.png"
+               alt="yt"></a>
+        <a href="nihalkhanghouri" target="_blank"><img class="social" src="li.png"
+               alt="li"></a>
+         <a href="https://github.com/nihalkhann" target="_blank"><img class="social" src="gh1.jpg"
+               alt="gh"></a>
+         <a href="https://www.instagram.com/nihal.khan_ghouri/" target="_blank"><img class="social" src="ig.png"
+               alt="ig"></a>
+      </div>
+      <p>Created by ❤️Nihal Khan Ghouri</p>
+ </div>
+     <script>
+
+        function showSidebar() {
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.display = 'flex';
+        }
+  
+        function hideSidebar() {
+           const sidebar = document.querySelector('.sidebar');
+           sidebar.style.display = 'none';
+        }
+       </script>
+</body>
+</html>
+
